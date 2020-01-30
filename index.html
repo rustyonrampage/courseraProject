@@ -15,8 +15,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Loader -->
+    <div id="main-loader" class="fullscreen-loader ">
+      <div class="fullscreen-loader-center">
+        <div class="loader"></div>
+      </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header start -->
     <div class="jumbotron pt-0 pb-0 jumbotron-fluid" id="petsies-header">
       <div class="container">
         <!-- Navigation bar start -->
@@ -61,12 +74,70 @@
         </div>
       </div>
     </div>
-    <!-- Loader -->
-    <div id="main-loader" class="fullscreen-loader ">
-      <div class="fullscreen-loader-center">
-        <div class="loader"></div>
+    <!-- Header end -->
+
+    <!-- Body container -->
+    <div class="container">
+      <!-- Look for pets container -->
+      <div class="row petsies-homeSection justify-content-center pb-5">
+        <div class="">
+          <h1 class="mb-0">Look for pets</h1>
+          <div
+            class=" petsies-divider d-flex justify-content-center align-items-center"
+          >
+            <span class="flex-grow-1 mr-2"></span>
+            <i class="fa fa-paw" aria-hidden="true"></i>
+            <span class="flex-grow-1 ml-2"></span>
+          </div>
+        </div>
       </div>
+      <div class="row justify-content-center mb-5">
+          <form>
+            <div class="row justify-content-center mb-3">
+                <div class="col-10  mb-3  col-sm-10 col-md-4">
+                    <input type="text" class="form-control" placeholder="City" name="city">
+                </div>
+                <div class="col-10 mb-3  col-sm-10 col-md-4">
+                    <input type="text" class="form-control" placeholder="State" name="state">
+                </div>
+                <div class="col-10 mb-3  col-sm-10 col-md-4">
+                    <input type="text" class="form-control" placeholder="Pet" name="pet">
+                </div>
+                <!-- <div class="col-10 mb-3  col-sm-10 col-md-4 d-block d-md-none ">
+                    <div class="petsies-button--container pt-1 pb-1">
+                        <div>
+                            <span>Search by Filters</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-10  d-sm-none d-md-block col-sm-10 col-md-5 ">
+                    <div class="petsies-button--container pt-1 pb-1">
+                        <div>
+                            <span>Search by Filters</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-10 col-sm-10 col-md-1  justify-content-center align-items-center">
+                        Or
+                </div>
+                <div class="col-10  mt-sm-3 mt-md-0 col-sm-10 col-md-5 ">
+                    <div class="petsies-button--container pt-1 pb-1">
+                        <div>
+                            <i class="fa fa-map-marker "></i>
+                            <span>Get by location</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Look for pets end -->
     </div>
+
     <footer>
       <script
         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
