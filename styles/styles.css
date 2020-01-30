@@ -1,0 +1,22 @@
+#petsies-header {
+  background-color: #cf4647;
+}
+
+#petsies-header * {
+  color: #fff;
+}
+#petsies-header .nav-link {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.2rem;
+  letter-spacing: 0.05rem;
+}
+#petsies-header .nav-link:hover {
+  font-weight: bold;
+  text-shadow: 0.05rem 0.05rem 0.1rem #000000;
+}
+.header-mainImg {
+  width: 50%;
+}
+.petsies-logo {
+  width: 6rem;
+}
